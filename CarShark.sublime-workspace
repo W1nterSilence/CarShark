@@ -11,7 +11,31 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2069,
+				"buffer_size": 2027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new_trip.html",
+			"settings":
+			{
+				"buffer_size": 1597,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "navbar.html",
+			"settings":
+			{
+				"buffer_size": 1118,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 188,
 				"line_ending": "Unix"
 			}
 		}
@@ -86,7 +110,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -94,20 +118,100 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2069,
+						"buffer_size": 2027,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1058,
-								1058
+								428,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 446.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "new_trip.html",
+					"settings":
+					{
+						"buffer_size": 1597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1401,
+								1401
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "navbar.html",
+					"settings":
+					{
+						"buffer_size": 1118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 11.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
