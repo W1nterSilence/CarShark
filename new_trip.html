@@ -9,76 +9,101 @@
 	<script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 	<script type="text/javascript" src="/js/app.js"></script>
 	<script type="text/javascript" src='http://maps.google.com/maps/api/js?sensor=false&libraries=places'></script>
-	<script type="text/javascript" src="js/locationpicker.jquery.js"></script>
+	<script type="text/javascript" src="/bower_components/jquery-locationpicker-plugin/dist/locationpicker.jquery.js"></script>
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"></link>
 	<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"></link>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+
+
+
+<body ng-app="carshark">
+
 <nav-bar></nav-bar>
-<div class="container-fluid"><h1>New trip</h1></div>
+
+<div class="container-fluid"><h1 class="text-center">New trip</h1></div>
 <div class="container-fluid">
-<form>
-	<div class="form-group">
-		<label>Choose best time</label>
-		<div class="row">
-			<div class='col-sm-6'>
-				<div class="form-group">
-					<div class='input-group date' id='datetimepicker1'>
-						<input type='text' class="form-control" />
-						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-						</span>
-					</div>
-				</div>
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class ="col-sm-2 text-right control-label">Choose best time:</label>
+			<div class="col-sm-5">
+			<div class='input-group date' id='datetimepicker1'>
+				<input type='text' class="form-control" />
+				<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+				</span>
 			</div>
-			<script type="text/javascript">
-				$(function () {
-					$('#datetimepicker1').datetimepicker();
-				});
-			</script>
+			</div>
+				<script type="text/javascript">
+					$(function () {
+						$('#datetimepicker1').datetimepicker();
+					});
+				</script>
 		</div>
-	</div>
-	<div class="form-group">
-
-	</div>
-</form>
-</div>
-
-<div class="form-horizontal">
-	<div class="form-group">
-		<label class="col-sm-1 control-label">Location:</label>
-		<div class="col-sm-5"><input type="text" class="form-control" id="us2-address" placeholder="Enter a location" autocomplete="off"></div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-1 control-label">Radius:</label>
-
-		<div class="col-sm-2"><input type="text" class="form-control" id="us2-radius"></div>
-	</div>
-	<div id="us2" style="width: 550px; height: 400px; position: relative; background-color: rgb(229, 227, 223); overflow: hidden;">
-	</div>
-	<div class="clearfix">&nbsp;</div>
-	<div class="m-t-small">
-		<label class="p-r-small col-sm-1 control-label">Lat.:</label>
-		<div class="col-sm-1">
-			<input type="text" class="form-control" style="width: 110px" id="us2-lat">
+		<div class="form-group">
+			<label class="col-sm-2 text-center control-label">Start:</label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" id="start-address" placeholder="Enter start location" autocomplete="off">
+			</div>
+			<div id="start" style="width: 300px; height: 250px">
+			</div>
 		</div>
-		<label class="p-r-small col-sm-1 control-label">Long.:</label>
-		<div class="col-sm-1">
-			<input type="text" class="form-control" style="width: 110px" id="us2-lon"></div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-
-<script>$('#us2').locationpicker({
-			location: {latitude: 46.15242437752303, longitude: 2.7470703125},
-			radius: 300,
+<script>
+$('#start').locationpicker({
+			location: {latitude: 54.9040441, longitude: 38.080350899999985},
+			radius: 10,
 			inputBinding: {
-				latitudeInput: $('#us2-lat'),
-				longitudeInput: $('#us2-lon'),
-				radiusInput: $('#us2-radius'),
-				locationNameInput: $('#us2-address')
+				latitudeInput: $('#start-lat'),
+				longitudeInput: $('#start-lon'),
+				radiusInput: $('#start-radius'),
+				locationNameInput: $('#start-address')
 			},
 			enableAutocomplete: true
-		});</script>
+		});
+</script>
 
+<!-- -->
+
+		<div class="form-group">
+			<label class="col-sm-2 text-center control-label">Finish:</label>
+			<div class="col-sm-5">
+				<input type="text" class="form-control" id="finish-address" placeholder="Enter finish location" autocomplete="off">
+			</div>
+			<div id="finish" style="width: 300px; height: 250px">
+			</div>
+		</div>
+<script>
+$('#finish').locationpicker({
+			location: {latitude: 54.939913, longitude: 38.04912999999999},
+			radius: 10,
+			inputBinding: {
+				latitudeInput: $('#finish-lat'),
+				longitudeInput: $('#finish-lon'),
+				radiusInput: $('#finish-radius'),
+				locationNameInput: $('#finish-address')
+			},
+			enableAutocomplete: true
+		});
+</script>
+		<div class="form-group">
+			
+			<label class="col-sm-2 text-center control-label">Places in the car:</label>
+			<p class=" col-sm-1 text-center text-muted form-control-static">
+				<i class="fa fa-user"></i>
+			</p>
+			<p class=" col-sm-1 text-center text-success form-control-static">
+				<i class="fa fa-user"></i>
+			</p>
+			<p class=" col-sm-1 text-center text-success form-control-static">
+				<i class="fa fa-user"></i>
+			</p>
+			<p class=" col-sm-1 text-center text-success form-control-static">
+				<i class="fa fa-user"></i>
+			</p>
+			<p class=" col-sm-1 text-center text-success form-control-static">
+				<i class="fa fa-user"></i>
+			</p>
+		</div>
+	</form>
+</div> <!--End of container fluid div-->
 </body>
 </html>
