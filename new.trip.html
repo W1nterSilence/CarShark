@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="carshark">
+<html>
 <title>CarShark</title>
 <head>
 	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
@@ -14,20 +14,13 @@
 	<link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"></link>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+
+
+
+<body ng-app="carshark">
+
 <nav-bar></nav-bar>
-<div class="panel panel-default">
-	<div class = "panel-body">
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Say "Hello" to the CarShark!</h1>
-			
-				<p>This is a first draft of the CarShark - the Mars CarSharing tool. Now it is not fully working, but a small group of the enthusiast is doing their best to bring this tool during 2015</p>
-				<p><a class="btn btn-primary btn-lg" href="https://github.com/W1nterSilence/CarShark" role="button">Learn more at the GitHub</a></p>
-			</div>
-		</div>
-	</div>
-</div>
+<newtrip-form></newtrip-form>
 
 </body>
 </html>

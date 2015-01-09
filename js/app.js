@@ -6,6 +6,13 @@ app.controller('NavController',function(){
 app.directive('navBar', function(){
 	return {
 		restrict: 'E',
-		templateUrl:'navbar.html'
+		templateUrl:'html/navbar.html'
+	};
+});
+
+app.directive('newtripForm', function(){
+	return {
+		restrict: 'E',
+		templateUrl:'html/newtripform.html'
 	};
 });

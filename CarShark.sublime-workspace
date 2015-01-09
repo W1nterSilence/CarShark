@@ -11,23 +11,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2027,
+				"buffer_size": 1774,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "new_trip.html",
+			"file": "html/navbar.html",
 			"settings":
 			{
-				"buffer_size": 1597,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "navbar.html",
-			"settings":
-			{
-				"buffer_size": 1118,
+				"buffer_size": 1099,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,7 +27,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 188,
+				"buffer_size": 308,
 				"line_ending": "Unix"
 			}
 		}
@@ -43,11 +35,11 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 167.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -64,6 +56,11 @@
 	},
 	"file_history":
 	[
+		"/Users/glebkulbasov/Sites/CarShark/trip.list.html",
+		"/Users/glebkulbasov/Sites/CarShark/new_trip.html",
+		"/Users/glebkulbasov/Sites/CarShark/navbar.html",
+		"/Users/glebkulbasov/Sites/CarShark/newtripform",
+		"/Users/glebkulbasov/Sites/CarShark/js/jquery.addresspicker.js",
 		"/Users/glebkulbasov/angular-phonecat/app/index.html",
 		"/Users/glebkulbasov/angular-phonecat/app/js/app.js",
 		"/Users/glebkulbasov/angular-phonecat/app/js/controllers.js",
@@ -79,7 +76,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -93,6 +90,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</div",
+			"<div class=\"well col-sm-1 text-center text-success\">",
+			"user",
+			"start",
+			"20",
+			"end",
+			"start",
+			"us2",
+			"    ",
+			"  ",
+			"    "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -100,6 +108,15 @@
 		"regex": false,
 		"replace_history":
 		[
+			"</p>",
+			"<p class=\" col-sm-1 text-center text-success form-control-static\">",
+			"<div class=\"well col-sm-1 text-center\">",
+			"finish",
+			"end",
+			"start",
+			"	",
+			"",
+			"	"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -118,15 +135,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2027,
+						"buffer_size": 1774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								428,
-								409
+								1392,
+								1392
 							]
 						],
 						"settings":
@@ -135,30 +152,31 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 446.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "new_trip.html",
+					"file": "html/navbar.html",
 					"settings":
 					{
-						"buffer_size": 1597,
+						"buffer_size": 1099,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1401,
-								1401
+								491,
+								491
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -168,45 +186,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "navbar.html",
-					"settings":
-					{
-						"buffer_size": 1118,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								456
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 11.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 188,
+						"buffer_size": 308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								0
+								283,
+								283
 							]
 						],
 						"settings":
@@ -255,7 +246,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
